@@ -1,0 +1,133 @@
+/*Give the <body> element a background of #bda464*/
+body{
+    background-color: #bda464;
+}
+/*Make the <h1> elements blue*/
+h1{
+    color: blue;
+}
+/*Make all <li> elements in the shade of hexadecimal blue*/
+li{
+    color: #00f;
+}
+/*Paragraph background to orange*/
+p{
+    background-color: orange;
+}
+/*Make all <h3> have 5px red solid border*/
+h3{
+    border: 5px red solid ;
+}
+/*Give everything with <abbr> bold and underlined*/
+abbr{
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*Give elements with class "explanation" red*/
+.explanation{
+    color: red;
+}
+/*Give <p> in id "zen-benefits" pink background*/
+#zen-benefits p{
+    background-color: pink;
+}
+/*Make <li> adjacent to <h2> red background*/
+ul + h2{
+    background-color: red;
+}
+/*Give <em> inside <p> red and bold*/
+p em{
+    color: red;
+    font-weight: bold;
+}
+/* Give visited link green */
+a:visited{
+    color: green;
+}
+/* Change to body font to any google font as you like */
+body{
+    font-family: 'Outfit', sans-serif;
+}
+/* Add any animation to <h1> (try the new one not same as the example) */
+h1{
+    position: relative;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #bda464;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 22%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+h2{
+    position: relative;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #bda464;
+    border-left: 2px solid whitesmoke;
+    animation: typing2 1.5s steps(10) infinite;
+}
+@keyframes typing2{
+    100%{
+        left: 38%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.select{
+    position: relative;
+}
+.select::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #bda464;
+    border-left: 2px solid whitesmoke;
+    animation: typing2-2 1.5s steps(10) infinite;
+}
+@keyframes typing2-2{
+    100%{
+        left: 22%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+h3{
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #bda464;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: whitesmoke;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
