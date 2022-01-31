@@ -49,67 +49,8 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 /* Add any animation to <h1> (try the new one not same as the example) */
+
 h1{
-    position: relative;
-}
-h1::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #bda464;
-    border-left: 2px solid #FC6D6D;
-    animation: typing 1.5s steps(10) infinite;
-}
-@keyframes typing{
-    100%{
-        left: 22%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
-h2{
-    position: relative;
-}
-h2::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #bda464;
-    border-left: 2px solid whitesmoke;
-    animation: typing2 1.5s steps(10) infinite;
-}
-@keyframes typing2{
-    100%{
-        left: 38%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
-.select{
-    position: relative;
-}
-.select::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #bda464;
-    border-left: 2px solid whitesmoke;
-    animation: typing2-2 1.5s steps(10) infinite;
-}
-@keyframes typing2-2{
-    100%{
-        left: 22%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
-h3{
     position: relative;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
     line-height: 0.70em;
